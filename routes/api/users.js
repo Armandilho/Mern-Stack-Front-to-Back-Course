@@ -1,11 +1,11 @@
+const User = require("../../models/User");
+const bcrypt = require("bcryptjs");
+const config = require("config");
 const express = require("express");
 const gravatar = require("gravatar");
-const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const config = require("config");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
-const User = require("../../models/User");
 
 // @route         Post api/users
 // @description   route used to register an user
